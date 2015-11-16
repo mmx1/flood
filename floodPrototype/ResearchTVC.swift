@@ -1,26 +1,30 @@
 //
-//  ListTVC.swift
+//  ResearchTVC.swift
 //  floodPrototype
 //
-//  Created by Mark Xue on 11/10/15.
+//  Created by Mark Xue on 11/13/15.
 //  Copyright © 2015 Mark Xue. All rights reserved.
 //
 
 import UIKit
 
-@objc
-protocol CenterViewControllerDelegate {
-    optional func toggleLeftPanel()
-    optional func toggleRightPanel()
-    optional func collapseSidePanels()
-}
+class ResearchTVC: UITableViewController, UISearchResultsUpdating, UISearchBarDelegate, UISearchDisplayDelegate{
 
-class ListTVC: UITableViewController {
-    
-    var delegate: CenterViewControllerDelegate?
+    /*hardcoded model:
+    */
+    let foodData = NSUserDefaults.standardUserDefaults().dictionaryForKey("foodData")
+    var searchController:UISearchController = UISearchController(searchResultsController: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        searchController.searchResultsUpdater = self
+        searchController.hidesNavigationBarDuringPresentation = false
+        searchController.dimsBackgroundDuringPresentation = false
+        searchController.searchBar.sizeToFit()
+        self.tableView.tableHeaderView = searchController.searchBar
+        
+        //definesPresentationContext = true;
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -28,6 +32,22 @@ class ListTVC: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    func searchFor(text:String){
+    
+    }
+    
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        let searchString = searchController.searchBar.text
+        searchFor(searchString!)
+        tableView.reloadData()
+    }
+    
+    func searchBar(searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        updateSearchResultsForSearchController(searchController)
+    }
+
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		153097761BF68A9B0076ACA7 /* ResearchTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153097751BF68A9B0076ACA7 /* ResearchTVC.swift */; };
+		153097771BF68A9B0076ACA7 /* ResearchTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153097751BF68A9B0076ACA7 /* ResearchTVC.swift */; };
 		15646B391BF2564100D2EFB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15646B381BF2564100D2EFB4 /* AppDelegate.swift */; };
 		15646B3E1BF2564100D2EFB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15646B3C1BF2564100D2EFB4 /* Main.storyboard */; };
 		15646B401BF2564100D2EFB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15646B3F1BF2564100D2EFB4 /* Assets.xcassets */; };
 		15646B431BF2564100D2EFB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15646B411BF2564100D2EFB4 /* LaunchScreen.storyboard */; };
 		15646B4E1BF2564100D2EFB4 /* floodPrototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15646B4D1BF2564100D2EFB4 /* floodPrototypeTests.swift */; };
 		15646B591BF2564100D2EFB4 /* floodPrototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15646B581BF2564100D2EFB4 /* floodPrototypeUITests.swift */; };
-		1571AC991BF25AFD00C35B5B /* ListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571AC981BF25AFD00C35B5B /* ListTVC.swift */; };
-		1571AC9A1BF25AFD00C35B5B /* ListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571AC981BF25AFD00C35B5B /* ListTVC.swift */; };
-		1571AC9B1BF25AFD00C35B5B /* ListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571AC981BF25AFD00C35B5B /* ListTVC.swift */; };
 		1571AC9D1BF25B1000C35B5B /* MenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571AC9C1BF25B1000C35B5B /* MenuTVC.swift */; };
 		1571AC9E1BF25B1000C35B5B /* MenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571AC9C1BF25B1000C35B5B /* MenuTVC.swift */; };
 		1571AC9F1BF25B1000C35B5B /* MenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571AC9C1BF25B1000C35B5B /* MenuTVC.swift */; };
@@ -39,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		153097751BF68A9B0076ACA7 /* ResearchTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResearchTVC.swift; sourceTree = "<group>"; };
 		15646B351BF2564100D2EFB4 /* floodPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = floodPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15646B381BF2564100D2EFB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15646B3D1BF2564100D2EFB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,7 +51,6 @@
 		15646B541BF2564100D2EFB4 /* floodPrototypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = floodPrototypeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15646B581BF2564100D2EFB4 /* floodPrototypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = floodPrototypeUITests.swift; sourceTree = "<group>"; };
 		15646B5A1BF2564100D2EFB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1571AC981BF25AFD00C35B5B /* ListTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTVC.swift; sourceTree = "<group>"; };
 		1571AC9C1BF25B1000C35B5B /* MenuTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTVC.swift; path = ../MenuTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,7 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				15646B381BF2564100D2EFB4 /* AppDelegate.swift */,
-				1571AC981BF25AFD00C35B5B /* ListTVC.swift */,
+				153097751BF68A9B0076ACA7 /* ResearchTVC.swift */,
 				1571AC9C1BF25B1000C35B5B /* MenuTVC.swift */,
 				15646B3C1BF2564100D2EFB4 /* Main.storyboard */,
 				15646B3F1BF2564100D2EFB4 /* Assets.xcassets */,
@@ -263,8 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1571AC991BF25AFD00C35B5B /* ListTVC.swift in Sources */,
 				1571AC9D1BF25B1000C35B5B /* MenuTVC.swift in Sources */,
+				153097761BF68A9B0076ACA7 /* ResearchTVC.swift in Sources */,
 				15646B391BF2564100D2EFB4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,7 +273,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1571AC9E1BF25B1000C35B5B /* MenuTVC.swift in Sources */,
-				1571AC9A1BF25AFD00C35B5B /* ListTVC.swift in Sources */,
 				15646B4E1BF2564100D2EFB4 /* floodPrototypeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1571AC9F1BF25B1000C35B5B /* MenuTVC.swift in Sources */,
-				1571AC9B1BF25AFD00C35B5B /* ListTVC.swift in Sources */,
+				153097771BF68A9B0076ACA7 /* ResearchTVC.swift in Sources */,
 				15646B591BF2564100D2EFB4 /* floodPrototypeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
