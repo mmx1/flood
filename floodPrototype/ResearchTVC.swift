@@ -29,6 +29,8 @@ class ResearchTVC: UITableViewController, UISearchResultsUpdating, UISearchBarDe
         searchController.searchBar.sizeToFit()
         self.tableView.tableHeaderView = searchController.searchBar
         
+        self.tableView.tableFooterView = UIView() //adds footer to hide extra separators
+        
         //definesPresentationContext = true;
 
         // Uncomment the following line to preserve selection between presentations
@@ -64,14 +66,16 @@ class ResearchTVC: UITableViewController, UISearchResultsUpdating, UISearchBarDe
         print(searchBar.text)
         if let sDictionary = searchDictionary {
             for key in sDictionary.keys {
-                if key.lowercaseString.rangeOfString(searchBar.text!.lowercaseString) != nil {
-                    searchResults.append(sDictionary[key] as! [String:AnyObject])
+                if var result = sDictionary[key] as? [String:AnyObject]
+                    where key.lowercaseString.rangeOfString(searchBar.text!.lowercaseString) != nil {
+                    result["name"] = key;
+                    searchResults.append(result)
                     print(key)
                 }
                     
             }
         }
-        
+        tableView.reloadData()
         enableCancelButton(searchBar)
     }
     
@@ -108,7 +112,11 @@ class ResearchTVC: UITableViewController, UISearchResultsUpdating, UISearchBarDe
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("researchCell", forIndexPath: indexPath)
+        if let researchCell = cell as? researchTVCell{
+            researchCell.updateWith(searchResults[indexPath.row])
+        }
 
+        
 
         return cell
     }
