@@ -1,0 +1,17 @@
+{"foods": { "almonds" : {
+			   "waterUsage": 	1929,
+			   "servingSize": "1 cup",
+			   "calories":	822,
+			   "fatGrams":	71,
+			   "proteinGrams":30,
+			   "rating":		3
+           },
+			"walnuts": {
+			   "waterUsage": 	1112,
+			   "servingSize": "1 cup",
+			   "calories":	785,
+			   "fatGrams":	78,
+			   "proteinGrams":18,
+			   "rating":		2
+            } },
+ "version" : 1}

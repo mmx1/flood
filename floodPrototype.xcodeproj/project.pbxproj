@@ -18,7 +18,10 @@
 		1571AC9D1BF25B1000C35B5B /* MenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571AC9C1BF25B1000C35B5B /* MenuTVC.swift */; };
 		1571AC9E1BF25B1000C35B5B /* MenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571AC9C1BF25B1000C35B5B /* MenuTVC.swift */; };
 		1571AC9F1BF25B1000C35B5B /* MenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571AC9C1BF25B1000C35B5B /* MenuTVC.swift */; };
-		15B991CA1BFA9FCE008C6ECF /* foods.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B991C91BFA9FCE008C6ECF /* foods.json */; };
+		15B991CA1BFA9FCE008C6ECF /* foodData.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B991C91BFA9FCE008C6ECF /* foodData.json */; };
+		15B991CC1BFAF84C008C6ECF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B991CB1BFAF84C008C6ECF /* TabBarController.swift */; };
+		15B991CD1BFAF892008C6ECF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B991CB1BFAF84C008C6ECF /* TabBarController.swift */; };
+		15B991CE1BFAF893008C6ECF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B991CB1BFAF84C008C6ECF /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +56,8 @@
 		15646B581BF2564100D2EFB4 /* floodPrototypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = floodPrototypeUITests.swift; sourceTree = "<group>"; };
 		15646B5A1BF2564100D2EFB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1571AC9C1BF25B1000C35B5B /* MenuTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTVC.swift; path = ../MenuTVC.swift; sourceTree = "<group>"; };
-		15B991C91BFA9FCE008C6ECF /* foods.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foods.json; sourceTree = "<group>"; };
+		15B991C91BFA9FCE008C6ECF /* foodData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foodData.json; sourceTree = "<group>"; };
+		15B991CB1BFAF84C008C6ECF /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,10 +112,11 @@
 				153097751BF68A9B0076ACA7 /* ResearchTVC.swift */,
 				1571AC9C1BF25B1000C35B5B /* MenuTVC.swift */,
 				15646B3C1BF2564100D2EFB4 /* Main.storyboard */,
+				15B991CB1BFAF84C008C6ECF /* TabBarController.swift */,
 				15646B3F1BF2564100D2EFB4 /* Assets.xcassets */,
 				15646B411BF2564100D2EFB4 /* LaunchScreen.storyboard */,
 				15646B441BF2564100D2EFB4 /* Info.plist */,
-				15B991C91BFA9FCE008C6ECF /* foods.json */,
+				15B991C91BFA9FCE008C6ECF /* foodData.json */,
 			);
 			path = floodPrototype;
 			sourceTree = "<group>";
@@ -239,7 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15646B431BF2564100D2EFB4 /* LaunchScreen.storyboard in Resources */,
-				15B991CA1BFA9FCE008C6ECF /* foods.json in Resources */,
+				15B991CA1BFA9FCE008C6ECF /* foodData.json in Resources */,
 				15646B401BF2564100D2EFB4 /* Assets.xcassets in Resources */,
 				15646B3E1BF2564100D2EFB4 /* Main.storyboard in Resources */,
 			);
@@ -267,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1571AC9D1BF25B1000C35B5B /* MenuTVC.swift in Sources */,
+				15B991CC1BFAF84C008C6ECF /* TabBarController.swift in Sources */,
 				153097761BF68A9B0076ACA7 /* ResearchTVC.swift in Sources */,
 				15646B391BF2564100D2EFB4 /* AppDelegate.swift in Sources */,
 			);
@@ -276,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15B991CE1BFAF893008C6ECF /* TabBarController.swift in Sources */,
 				1571AC9E1BF25B1000C35B5B /* MenuTVC.swift in Sources */,
 				15646B4E1BF2564100D2EFB4 /* floodPrototypeTests.swift in Sources */,
 			);
@@ -286,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1571AC9F1BF25B1000C35B5B /* MenuTVC.swift in Sources */,
+				15B991CD1BFAF892008C6ECF /* TabBarController.swift in Sources */,
 				153097771BF68A9B0076ACA7 /* ResearchTVC.swift in Sources */,
 				15646B591BF2564100D2EFB4 /* floodPrototypeUITests.swift in Sources */,
 			);

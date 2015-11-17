@@ -14,13 +14,18 @@ class ResearchTVC: UITableViewController, UISearchResultsUpdating, UISearchBarDe
     */
     let foodData = NSUserDefaults.standardUserDefaults().dictionaryForKey("foodData")
     var searchController:UISearchController = UISearchController(searchResultsController: nil)
-    
+    var searchResults:[[String:AnyObject]] = []
+    let searchDictionary = NSUserDefaults.standardUserDefaults().dictionaryForKey("foodDictionary")
+        
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        navigationController?.navigationBar.topItem?.title = "Research"
         
         searchController.searchResultsUpdater = self
         searchController.hidesNavigationBarDuringPresentation = false
         searchController.dimsBackgroundDuringPresentation = false
+        searchController.searchBar.delegate = self
         searchController.searchBar.sizeToFit()
         self.tableView.tableHeaderView = searchController.searchBar
         
@@ -53,28 +58,61 @@ class ResearchTVC: UITableViewController, UISearchResultsUpdating, UISearchBarDe
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func searchBarSearchButtonClicked(searchBar : UISearchBar){
+        //request.naturalLanguageQuery = searchBar.text
+        print(searchBar.text)
+        if let sDictionary = searchDictionary {
+            for key in sDictionary.keys {
+                if key.lowercaseString.rangeOfString(searchBar.text!.lowercaseString) != nil {
+                    searchResults.append(sDictionary[key] as! [String:AnyObject])
+                    print(key)
+                }
+                    
+            }
+        }
+        
+        enableCancelButton(searchBar)
+    }
+    
+    func searchBarCancelButtonClicked(searchBar : UISearchBar){
+        searchResults = []
+    }
+    
+    func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
+        searchBar.setShowsCancelButton(true, animated: true)
+    }
+    
+    func enableCancelButton(searchBar : UISearchBar){
+        for view in searchBar.subviews {
+            for subview in view.subviews {
+                if let button = subview as? UIButton{
+                    button.enabled = true
+                }
+            }
+        }
+    }
 
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        return searchResults.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("researchCell", forIndexPath: indexPath)
 
-        // Configure the cell...
 
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.

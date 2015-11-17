@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func setHardCodeData(){
         
         let currentVersion = NSUserDefaults.standardUserDefaults().floatForKey("dataVersion");
-        if let path = NSBundle.mainBundle().pathForResource("assets/foodData", ofType: "json") {
+        if let path = NSBundle.mainBundle().pathForResource("foodData", ofType: "json") {
             do {
                 let jsonData = try NSData(contentsOfURL: NSURL(fileURLWithPath: path), options: NSDataReadingOptions.DataReadingMappedIfSafe)
                 
@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 
                 if let jsonDictionary = jsonResult as? [String:AnyObject],
                     let newVersion = jsonDictionary["version"] as? Float where currentVersion < newVersion,
-                    let foodItems = jsonDictionary["foods"] as? [[String:AnyObject]]{
+                    let foodItems = jsonDictionary["foods"] as? [String:AnyObject]{
                     
                         NSUserDefaults.standardUserDefaults().setObject(foodItems, forKey: "foodDictionary")
                         
@@ -46,6 +46,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         setHardCodeData();
+        
+        let standardBlue = UIColor(colorLiteralRed: 74/255,
+            green: 135/255, blue: 238/255, alpha: 1)
+        UINavigationBar.appearance().barTintColor = standardBlue
+        UISearchBar.appearance().barTintColor = standardBlue
+        UISearchBar.appearance().tintColor = UIColor.whiteColor()
         
         
         // Override point for customization after application launch.
