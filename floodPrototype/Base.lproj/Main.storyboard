@@ -258,7 +258,6 @@
         <!--Research-->
         <scene sceneID="ExD-A7-1as">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="X3Y-FX-4JO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="FuP-WR-bk7" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <tabBarItem key="tabBarItem" title="Research" id="I1g-aN-5av"/>
@@ -273,6 +272,7 @@
                         <segue destination="sAn-qN-l3c" kind="relationship" relationship="rootViewController" id="Mol-Zf-h2L"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X3Y-FX-4JO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="200" y="99"/>
         </scene>

@@ -7,27 +7,47 @@
 //
 
 import UIKit
-import Foundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        if let path = NSBundle.mainBundle().pathForResource("researchItems", ofType: "json")
-        {
-            if let jsonData = NSData(contentsOfFile: path, options: .DataReadingMappedIfSafe, error: nil)
-            {
-                if let jsonResult: NSDictionary = NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.MutableContainers, error: nil) as? NSDictionary
-                {
-                    if let persons : NSArray = jsonResult["person"] as? NSArray
-                    {
-                        // Do stuff
-                    }
+    func setHardCodeData(){
+        
+        let currentVersion = NSUserDefaults.standardUserDefaults().floatForKey("dataVersion");
+        if let path = NSBundle.mainBundle().pathForResource("assets/foodData", ofType: "json") {
+            do {
+                let jsonData = try NSData(contentsOfURL: NSURL(fileURLWithPath: path), options: NSDataReadingOptions.DataReadingMappedIfSafe)
+                
+                let jsonResult = try NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.MutableContainers)
+                
+                
+                if let jsonDictionary = jsonResult as? [String:AnyObject],
+                    let newVersion = jsonDictionary["version"] as? Float where currentVersion < newVersion,
+                    let foodItems = jsonDictionary["foods"] as? [[String:AnyObject]]{
+                    
+                        NSUserDefaults.standardUserDefaults().setObject(foodItems, forKey: "foodDictionary")
+                        
+                        NSUserDefaults.standardUserDefaults().setFloat(jsonResult["version"] as! Float, forKey: "dataVersion")
+                    
+                    
                 }
+                
+                
+            } catch let error as NSError {
+                print(error.localizedDescription)
             }
+        } else {
+            print("Invalid filename/path.")
         }
+    }
+    
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        setHardCodeData();
+        
+        
         // Override point for customization after application launch.
         return true
     }
