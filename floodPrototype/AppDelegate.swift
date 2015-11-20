@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 
                 
                 if let jsonDictionary = jsonResult as? [String:AnyObject],
-                    let newVersion = jsonDictionary["version"] as? Float where currentVersion < newVersion,
+                    //let newVersion = jsonDictionary["version"] as? Float where currentVersion < newVersion,
                     let foodItems = jsonDictionary["foods"] as? [String:AnyObject]{
                     
                         NSUserDefaults.standardUserDefaults().setObject(foodItems, forKey: "foodDictionary")

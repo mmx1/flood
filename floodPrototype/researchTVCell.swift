@@ -52,6 +52,8 @@ class researchTVCell: UITableViewCell {
             }
         }
         
+        setNeedsLayout()
+        
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

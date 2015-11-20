@@ -20,7 +20,7 @@ class ResearchTVC: UITableViewController, UISearchResultsUpdating, UISearchBarDe
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        navigationController?.navigationBar.topItem?.title = "Research"
+        title = "Research"
         
         searchController.searchResultsUpdater = self
         searchController.hidesNavigationBarDuringPresentation = false
@@ -29,13 +29,14 @@ class ResearchTVC: UITableViewController, UISearchResultsUpdating, UISearchBarDe
         searchController.searchBar.sizeToFit()
         searchController.searchBar.searchBarStyle = .Prominent
         
-        self.view.tintColor = UIColor.whiteColor()
+        view.tintColor = UIColor.whiteColor()
         
         //searchController.searchBar.tintColor = UIColor.whiteColor();
         
-        self.tableView.tableHeaderView = searchController.searchBar
+        tableView.tableHeaderView = searchController.searchBar
+        //tableView.delegate = self
         
-        self.tableView.tableFooterView = UIView() //adds footer to hide extra separators
+        tableView.tableFooterView = UIView() //adds footer to hide extra separators
         
         //definesPresentationContext = true;
 
@@ -44,6 +45,11 @@ class ResearchTVC: UITableViewController, UISearchResultsUpdating, UISearchBarDe
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        searchController.searchBar.hidden = false
     }
     
     func searchFor(text:String){
@@ -69,7 +75,7 @@ class ResearchTVC: UITableViewController, UISearchResultsUpdating, UISearchBarDe
     
     func searchBarSearchButtonClicked(searchBar : UISearchBar){
         //request.naturalLanguageQuery = searchBar.text
-        print(searchBar.text)
+        searchResults = []
         if let sDictionary = searchDictionary {
             for key in sDictionary.keys {
                 if var result = sDictionary[key] as? [String:AnyObject]
@@ -127,6 +133,15 @@ class ResearchTVC: UITableViewController, UISearchResultsUpdating, UISearchBarDe
         
 
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        searchController.searchBar.hidden = true
+        if let detailVC = storyboard?.instantiateViewControllerWithIdentifier("ResearchDetailTVC") as? ResearchDetailTVC{
+                detailVC.detailResult = searchResults[indexPath.row]
+                navigationController?.pushViewController(detailVC, animated: true)
+        }
+        
     }
 
 
