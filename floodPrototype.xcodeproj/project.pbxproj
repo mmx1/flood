@@ -18,6 +18,12 @@
 		1571AC9D1BF25B1000C35B5B /* MenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571AC9C1BF25B1000C35B5B /* MenuTVC.swift */; };
 		1571AC9E1BF25B1000C35B5B /* MenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571AC9C1BF25B1000C35B5B /* MenuTVC.swift */; };
 		1571AC9F1BF25B1000C35B5B /* MenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571AC9C1BF25B1000C35B5B /* MenuTVC.swift */; };
+		15A6CCAC1BFBC06000372BCC /* METADATA.json in Resources */ = {isa = PBXBuildFile; fileRef = 15A6CCA61BFBC06000372BCC /* METADATA.json */; };
+		15A6CCAD1BFBC06000372BCC /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15A6CCA71BFBC06000372BCC /* Montserrat-Black.ttf */; };
+		15A6CCAE1BFBC06000372BCC /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15A6CCA81BFBC06000372BCC /* Montserrat-Bold.ttf */; };
+		15A6CCAF1BFBC06000372BCC /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15A6CCA91BFBC06000372BCC /* Montserrat-Light.ttf */; };
+		15A6CCB01BFBC06000372BCC /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15A6CCAA1BFBC06000372BCC /* Montserrat-Regular.ttf */; };
+		15A6CCB11BFBC06000372BCC /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15A6CCAB1BFBC06000372BCC /* Montserrat-Thin.ttf */; };
 		15B991CA1BFA9FCE008C6ECF /* foodData.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B991C91BFA9FCE008C6ECF /* foodData.json */; };
 		15B991CC1BFAF84C008C6ECF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B991CB1BFAF84C008C6ECF /* TabBarController.swift */; };
 		15B991CD1BFAF892008C6ECF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B991CB1BFAF84C008C6ECF /* TabBarController.swift */; };
@@ -49,7 +55,7 @@
 		15646B351BF2564100D2EFB4 /* floodPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = floodPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15646B381BF2564100D2EFB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15646B3D1BF2564100D2EFB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		15646B3F1BF2564100D2EFB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15646B3F1BF2564100D2EFB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = floodPrototype/Assets.xcassets; sourceTree = "<group>"; };
 		15646B421BF2564100D2EFB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15646B441BF2564100D2EFB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15646B491BF2564100D2EFB4 /* floodPrototypeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = floodPrototypeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,7 +65,13 @@
 		15646B581BF2564100D2EFB4 /* floodPrototypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = floodPrototypeUITests.swift; sourceTree = "<group>"; };
 		15646B5A1BF2564100D2EFB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1571AC9C1BF25B1000C35B5B /* MenuTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTVC.swift; path = ../MenuTVC.swift; sourceTree = "<group>"; };
-		15B991C91BFA9FCE008C6ECF /* foodData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foodData.json; sourceTree = "<group>"; };
+		15A6CCA61BFBC06000372BCC /* METADATA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = METADATA.json; sourceTree = "<group>"; };
+		15A6CCA71BFBC06000372BCC /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		15A6CCA81BFBC06000372BCC /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		15A6CCA91BFBC06000372BCC /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		15A6CCAA1BFBC06000372BCC /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		15A6CCAB1BFBC06000372BCC /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		15B991C91BFA9FCE008C6ECF /* foodData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = foodData.json; path = floodPrototype/foodData.json; sourceTree = "<group>"; };
 		15B991CB1BFAF84C008C6ECF /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		15B991CF1BFB0AD7008C6ECF /* researchTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = researchTVCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +104,7 @@
 		15646B2C1BF2564000D2EFB4 = {
 			isa = PBXGroup;
 			children = (
+				15A6CCA51BFBC01100372BCC /* Resources */,
 				15646B371BF2564100D2EFB4 /* floodPrototype */,
 				15646B4C1BF2564100D2EFB4 /* floodPrototypeTests */,
 				15646B571BF2564100D2EFB4 /* floodPrototypeUITests */,
@@ -118,10 +131,8 @@
 				15646B3C1BF2564100D2EFB4 /* Main.storyboard */,
 				15B991CF1BFB0AD7008C6ECF /* researchTVCell.swift */,
 				15B991CB1BFAF84C008C6ECF /* TabBarController.swift */,
-				15646B3F1BF2564100D2EFB4 /* Assets.xcassets */,
 				15646B411BF2564100D2EFB4 /* LaunchScreen.storyboard */,
 				15646B441BF2564100D2EFB4 /* Info.plist */,
-				15B991C91BFA9FCE008C6ECF /* foodData.json */,
 			);
 			path = floodPrototype;
 			sourceTree = "<group>";
@@ -142,6 +153,21 @@
 				15646B5A1BF2564100D2EFB4 /* Info.plist */,
 			);
 			path = floodPrototypeUITests;
+			sourceTree = "<group>";
+		};
+		15A6CCA51BFBC01100372BCC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				15646B3F1BF2564100D2EFB4 /* Assets.xcassets */,
+				15B991C91BFA9FCE008C6ECF /* foodData.json */,
+				15A6CCA61BFBC06000372BCC /* METADATA.json */,
+				15A6CCA71BFBC06000372BCC /* Montserrat-Black.ttf */,
+				15A6CCA81BFBC06000372BCC /* Montserrat-Bold.ttf */,
+				15A6CCA91BFBC06000372BCC /* Montserrat-Light.ttf */,
+				15A6CCAA1BFBC06000372BCC /* Montserrat-Regular.ttf */,
+				15A6CCAB1BFBC06000372BCC /* Montserrat-Thin.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,10 +274,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15A6CCB11BFBC06000372BCC /* Montserrat-Thin.ttf in Resources */,
+				15A6CCB01BFBC06000372BCC /* Montserrat-Regular.ttf in Resources */,
 				15646B431BF2564100D2EFB4 /* LaunchScreen.storyboard in Resources */,
 				15B991CA1BFA9FCE008C6ECF /* foodData.json in Resources */,
 				15646B401BF2564100D2EFB4 /* Assets.xcassets in Resources */,
+				15A6CCAC1BFBC06000372BCC /* METADATA.json in Resources */,
+				15A6CCAF1BFBC06000372BCC /* Montserrat-Light.ttf in Resources */,
 				15646B3E1BF2564100D2EFB4 /* Main.storyboard in Resources */,
+				15A6CCAD1BFBC06000372BCC /* Montserrat-Black.ttf in Resources */,
+				15A6CCAE1BFBC06000372BCC /* Montserrat-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

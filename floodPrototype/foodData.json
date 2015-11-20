@@ -1,17 +1,159 @@
 {"foods": { "almonds" : {
-			   "waterUsage": 	1929,
-			   "servingSize": "1 cup",
-			   "calories":	822,
-			   "fatGrams":	71,
-			   "proteinGrams":30,
-			   "rating":		3
-           },
-			"walnuts": {
-			   "waterUsage": 	1112,
-			   "servingSize": "1 cup",
-			   "calories":	785,
-			   "fatGrams":	78,
-			   "proteinGrams":18,
-			   "rating":		2
-            } },
- "version" : 1}
+			 "waterUsageGalPerLb": 	1929,
+			 "servingSize": "1 cup",
+			 "calories":	822,
+			 "fatGrams":	71,
+			 "proteinGrams":30,
+			 "rating":		3,
+    "text" : "Sample text",
+    "url" : "sample url"}
+    ,"walnuts": {
+        "waterUsageGalPerLb": 	1112,
+        "servingSize": "1 cup",
+        "calories":	785,
+        "fatGrams":	78,
+        "proteinGrams":18,
+        "rating":		2,
+        "text" : "Sample text",
+        "url" : "sample url"}
+    ,"Coffee": {
+        "waterUsageGalPerLb": 	2640,
+        "servingSize": "1 cup",
+        "calories":	2,
+        "fatGrams":	0,
+        "proteinGrams":0,
+        "rating":		5,
+        "text" : "Sample text",
+        "url" : "sample url"}
+,"Beef": {
+    "waterUsageGalPerLb": 	1847,
+    "servingSize": "3 oz",
+    "calories":	213,
+    "fatGrams":	13,
+    "proteinGrams": 22,
+    "rating":		3,
+    "text" : "Sample text",
+    "url" : "sample url"}
+
+,"Chicken": {
+    "waterUsageGalPerLb": 	518,
+    "servingSize": "100g",
+    "calories":	239,
+    "fatGrams":	14,
+    "proteinGrams":  27,
+    "rating":		1.5,
+    "text" : "Sample text",
+    "url" : "sample url"}
+
+,"Mutton": {
+    "waterUsageGalPerLb": 	1248,
+    "servingSize": "100g",
+    "calories":	294,
+    "fatGrams":	21,
+    "proteinGrams":  25,
+    "rating":		2,
+    "text" : "Sample text",
+    "url" : "sample url"}
+
+,"Pork": {
+    "waterUsageGalPerLb": 	718,
+    "servingSize": "100g",
+    "calories":	145,
+    "fatGrams":	6,
+    "proteinGrams":  21,
+    "rating":		1.5,
+    "text" : "Sample text",
+    "url" : "sample url"}
+
+,"Eggs": {
+    "waterUsageGalPerLb": 	395,
+    "servingSize": "100g",
+    "calories":	155,
+    "fatGrams":	11,
+    "proteinGrams":  13,
+    "rating":		1,
+    "text" : "Sample text",
+    "url" : "sample url"}
+
+,"Cheese": {
+    "waterUsageGalPerLb": 	381,
+    "servingSize": "100g",
+    "calories":	400,
+    "fatGrams":	33,
+    "proteinGrams":  25,
+    "rating":		1,
+    "text" : "Sample text",
+    "url" : "sample url"}
+
+,"Milk": {
+    "waterUsageGalPerLb": 	122,
+    "servingSize": "1 cup",
+    "calories":	103,
+    "fatGrams":	2.4,
+    "proteinGrams":  8,
+    "rating":		0.5,
+    "text" : "Sample text",
+    "url" : "sample url"}
+
+
+,"Pasta": {
+    "waterUsageGalPerLb": 	222,
+    "servingSize": "100g",
+    "calories":	131,
+    "fatGrams":	1.1,
+    "proteinGrams":  5,
+    "rating":		1,
+    "text" : "Sample text",
+    "url" : "sample url"}
+,
+"Brown Rice": {
+    "waterUsageGalPerLb": 	299,
+    "servingSize": "100g",
+    "calories":	111,
+    "fatGrams":	0.9,
+    "proteinGrams":  2.6,
+    "rating":		1,
+    "text" : "Sample text",
+    "url" : "sample url"}
+,
+"Wheat Bread": {
+    "waterUsageGalPerLb": 	193,
+    "servingSize": "100g",
+    "calories":	293,
+    "fatGrams":	3.3,
+    "proteinGrams":  11,
+    "rating":		1,
+    "text" : "Sample text",
+    "url" : "sample url"}
+,
+"Potatoes": {
+    "waterUsageGalPerLb": 	34,
+    "servingSize": "100g",
+    "calories":	77,
+    "fatGrams":	0.1,
+    "proteinGrams":  2,
+    "rating":		0.2,
+    "text" : "Sample text",
+    "url" : "sample url"}
+,
+"Oranges": {
+    "waterUsageGalPerLb": 	67,
+    "servingSize": "100g",
+    "calories":	47,
+    "fatGrams":	0.1,
+    "proteinGrams":  0.9,
+    "rating":		0.5,
+    "text" : "Sample text",
+    "url" : "sample url"}
+,
+"Plums": {
+    "waterUsageGalPerLb": 	261,
+    "servingSize": "100g",
+    "calories":	46,
+    "fatGrams":	0.3,
+    "proteinGrams":  0.7,
+    "rating":		1,
+    "text" : "Sample text",
+    "url" : "sample url"}
+},
+"version" : 1.1}

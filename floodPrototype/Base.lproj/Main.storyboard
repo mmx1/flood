@@ -5,109 +5,17 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
-        <!--Item-->
-        <scene sceneID="5nc-cv-0jw">
-            <objects>
-                <tableViewController storyboardIdentifier="MenuTVC" id="8ux-1Q-ssd" customClass="MenuTVC" customModule="floodPrototype" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="w25-Z7-qzW">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <sections>
-                            <tableViewSection id="Mvc-gG-vmb">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="GDi-Ia-DF0">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GDi-Ia-DF0" id="CJy-gk-vPm">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shopping" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgl-CF-BFS">
-                                                    <rect key="frame" x="8" y="11" width="74" height="21"/>
-                                                    <animations/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <animations/>
-                                        </tableViewCellContentView>
-                                        <animations/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8pd-EB-j0C">
-                                        <rect key="frame" x="0.0" y="44" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8pd-EB-j0C" id="yz8-1h-X9D">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Research" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGt-5N-P5d">
-                                                    <rect key="frame" x="8" y="11" width="72" height="21"/>
-                                                    <animations/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <animations/>
-                                        </tableViewCellContentView>
-                                        <animations/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="MVt-YL-XYX">
-                                        <rect key="frame" x="0.0" y="88" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MVt-YL-XYX" id="g5W-4z-uKY">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67X-jz-qdt">
-                                                    <rect key="frame" x="8" y="11" width="49" height="21"/>
-                                                    <animations/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <animations/>
-                                        </tableViewCellContentView>
-                                        <animations/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="SPc-ZI-ziA">
-                                        <rect key="frame" x="0.0" y="132" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SPc-ZI-ziA" id="Yow-iD-DCf">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4o-vf-Vg1">
-                                                    <rect key="frame" x="8" y="11" width="64" height="21"/>
-                                                    <animations/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <animations/>
-                                        </tableViewCellContentView>
-                                        <animations/>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="8ux-1Q-ssd" id="r2u-tv-moL"/>
-                            <outlet property="delegate" destination="8ux-1Q-ssd" id="yyq-9l-RYc"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="VLr-vp-Uzw"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iDW-JA-ZFE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1568" y="-900"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="nnJ-g9-IE4">
             <objects>
@@ -205,44 +113,44 @@
                                             </variation>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1S-A3-n6g">
-                                            <rect key="frame" x="16" y="16" width="50" height="27"/>
+                                            <rect key="frame" x="16" y="16" width="63" height="30"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="25"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nutrition Facts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8BM-Nt-K5Q">
-                                            <rect key="frame" x="16" y="51" width="112" height="21"/>
+                                            <rect key="frame" x="16" y="54" width="74" height="12"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Serving Size:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6e-P3-eQv">
-                                            <rect key="frame" x="16" y="80" width="100" height="21"/>
+                                            <rect key="frame" x="16" y="74" width="106" height="21"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYd-aA-bZV">
-                                            <rect key="frame" x="16" y="109" width="63" height="21"/>
+                                            <rect key="frame" x="16" y="103" width="67" height="21"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Fat:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdZ-e0-Q1C">
-                                            <rect key="frame" x="16" y="138" width="70" height="21"/>
+                                            <rect key="frame" x="16" y="132" width="76" height="21"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protein:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u19-0e-nJL">
-                                            <rect key="frame" x="16" y="167" width="59" height="21"/>
+                                            <rect key="frame" x="16" y="161" width="66" height="21"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -325,6 +233,37 @@
             </objects>
             <point key="canvasLocation" x="1012" y="99"/>
         </scene>
+        <!--Table View Controller-->
+        <scene sceneID="AU0-n1-xW1">
+            <objects>
+                <tableViewController id="k76-9y-ZIG" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Y0k-hY-0tz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="AdN-3A-6mr">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AdN-3A-6mr" id="PX8-1I-F7e">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="k76-9y-ZIG" id="0Vx-Oy-PRZ"/>
+                            <outlet property="delegate" destination="k76-9y-ZIG" id="h57-jz-uRB"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ypi-3I-iuX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1714" y="101"/>
+        </scene>
         <!--Suggestions-->
         <scene sceneID="Pdr-Ic-3fJ">
             <objects>
@@ -360,7 +299,7 @@
                             <outlet property="delegate" destination="8wY-nr-SHd" id="JPg-dp-44H"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Suggestions" id="sZd-8l-xTh"/>
+                    <tabBarItem key="tabBarItem" title="Suggestions" image="suggestions" selectedImage="suggestions" id="sZd-8l-xTh"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9b1-ew-vD6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -381,7 +320,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Checkout" id="qkb-eR-FMN"/>
+                    <tabBarItem key="tabBarItem" title="Checkout" image="shopping" selectedImage="shopping" id="qkb-eR-FMN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ab-le-mwY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -413,7 +352,7 @@
                             <outlet property="delegate" destination="DE5-QF-5Xk" id="eIc-X7-BZO"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Profile" id="rxH-Ch-E7J"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" selectedImage="profile" id="rxH-Ch-E7J"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="48e-8J-bpF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -424,7 +363,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FuP-WR-bk7" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <tabBarItem key="tabBarItem" title="Research" id="I1g-aN-5av"/>
+                    <tabBarItem key="tabBarItem" title="Research" image="research" selectedImage="research" id="I1g-aN-5av"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Xnb-K9-bYV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -442,4 +381,10 @@
             <point key="canvasLocation" x="200" y="99"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="profile" width="30" height="30"/>
+        <image name="research" width="30" height="30"/>
+        <image name="shopping" width="30" height="30"/>
+        <image name="suggestions" width="30" height="30"/>
+    </resources>
 </document>

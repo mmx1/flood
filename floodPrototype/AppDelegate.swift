@@ -43,16 +43,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
+    func listFonts(){
+        for family: String in UIFont.familyNames()
+        {
+            print("\(family)")
+            for names: String in UIFont.fontNamesForFamilyName(family)
+            {
+                print("== \(names)")
+            }
+        }
+    }
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         setHardCodeData();
         
         let standardBlue = UIColor(colorLiteralRed: 74/255,
-            green: 135/255, blue: 238/255, alpha: 1)
+            green: 135/255, blue: 238/255, alpha: 100/255)
+
         UINavigationBar.appearance().barTintColor = standardBlue
         UISearchBar.appearance().barTintColor = standardBlue
         UISearchBar.appearance().tintColor = UIColor.whiteColor()
+        if let montserratFont = UIFont(name: "Montserrat", size: 17.0){
+            UINavigationBar.appearance().titleTextAttributes = [
+                NSFontAttributeName:montserratFont,
+                NSForegroundColorAttributeName: UIColor.whiteColor()
+            ]
+            //UIBarButtonItem.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).tintColor = UIColor.whiteColor()
+            UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).font = UIFont(name: "Montserrat", size: 15)
+            //UILabel.appearance().font = montserratFont        
+        }
+
         
+
+        
+        //listFonts()
         
         // Override point for customization after application launch.
         return true

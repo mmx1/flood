@@ -27,6 +27,12 @@ class ResearchTVC: UITableViewController, UISearchResultsUpdating, UISearchBarDe
         searchController.dimsBackgroundDuringPresentation = false
         searchController.searchBar.delegate = self
         searchController.searchBar.sizeToFit()
+        searchController.searchBar.searchBarStyle = .Prominent
+        
+        self.view.tintColor = UIColor.whiteColor()
+        
+        //searchController.searchBar.tintColor = UIColor.whiteColor();
+        
         self.tableView.tableHeaderView = searchController.searchBar
         
         self.tableView.tableFooterView = UIView() //adds footer to hide extra separators
@@ -76,7 +82,7 @@ class ResearchTVC: UITableViewController, UISearchResultsUpdating, UISearchBarDe
             }
         }
         tableView.reloadData()
-        enableCancelButton(searchBar)
+        //enableCancelButton(searchBar)
     }
     
     func searchBarCancelButtonClicked(searchBar : UISearchBar){
@@ -84,7 +90,8 @@ class ResearchTVC: UITableViewController, UISearchResultsUpdating, UISearchBarDe
     }
     
     func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
-        searchBar.setShowsCancelButton(true, animated: true)
+        //searchBar.setShowsCancelButton(true, animated: true)
+        //enableCancelButton(searchBar)
     }
     
     func enableCancelButton(searchBar : UISearchBar){
@@ -92,6 +99,7 @@ class ResearchTVC: UITableViewController, UISearchResultsUpdating, UISearchBarDe
             for subview in view.subviews {
                 if let button = subview as? UIButton{
                     button.enabled = true
+                    //button.tintColor = UIColor.whiteColor()
                 }
             }
         }
