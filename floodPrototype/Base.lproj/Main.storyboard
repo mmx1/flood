@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0Oy-4O-M7u">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0Oy-4O-M7u">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
@@ -41,6 +41,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="8wY-nr-SHd" kind="relationship" relationship="viewControllers" id="4MX-hE-3YW"/>
+                        <segue destination="voF-Yv-Y2X" kind="relationship" relationship="viewControllers" id="WlU-bE-VGW"/>
                         <segue destination="8ut-0q-Nh6" kind="relationship" relationship="viewControllers" id="VJR-7c-Ytn"/>
                         <segue destination="FuP-WR-bk7" kind="relationship" relationship="viewControllers" id="alE-M6-9pa"/>
                         <segue destination="DE5-QF-5Xk" kind="relationship" relationship="viewControllers" id="aWd-nY-FG0"/>
@@ -48,7 +49,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gE-dL-qaY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-580" y="539"/>
+            <point key="canvasLocation" x="-654" y="557"/>
         </scene>
         <!--ResearchTVC-->
         <scene sceneID="GCd-1m-w8z">
@@ -64,7 +65,7 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="223"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UVp-83-ubL" id="hy2-Nb-CCO">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="222"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="222.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WTX-y7-LiJ">
@@ -129,42 +130,42 @@
                                             <rect key="frame" x="16" y="16" width="63" height="30"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="25"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nutrition Facts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8BM-Nt-K5Q">
                                             <rect key="frame" x="16" y="54" width="74" height="12"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Serving Size:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6e-P3-eQv">
                                             <rect key="frame" x="16" y="74" width="106" height="21"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYd-aA-bZV">
                                             <rect key="frame" x="16" y="103" width="67" height="21"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Fat:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdZ-e0-Q1C">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total Fat:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdZ-e0-Q1C">
                                             <rect key="frame" x="16" y="132" width="76" height="21"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protein:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u19-0e-nJL">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Protein:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u19-0e-nJL">
                                             <rect key="frame" x="16" y="161" width="66" height="21"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kRp-Rt-llv">
@@ -269,8 +270,8 @@
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
-                                            <exclude reference="ODb-P3-n4p"/>
                                             <exclude reference="4W5-Pd-T3c"/>
+                                            <exclude reference="ODb-P3-n4p"/>
                                         </mask>
                                     </variation>
                                 </imageView>
@@ -297,8 +298,8 @@
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
-                                            <exclude reference="fws-pR-s7X"/>
                                             <exclude reference="KUw-4Q-6hd"/>
+                                            <exclude reference="fws-pR-s7X"/>
                                         </mask>
                                     </variation>
                                 </imageView>
@@ -313,8 +314,8 @@
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
-                                            <exclude reference="dX0-tn-ytc"/>
                                             <exclude reference="5He-AB-ito"/>
+                                            <exclude reference="dX0-tn-ytc"/>
                                         </mask>
                                     </variation>
                                 </imageView>
@@ -322,42 +323,42 @@
                                     <rect key="frame" x="-60" y="20" width="143" height="30"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="25"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nutrition Facts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nV1-c5-9LY">
                                     <rect key="frame" x="20" y="58" width="74" height="12"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Serving Size:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgG-8K-1hY">
                                     <rect key="frame" x="20" y="78" width="106" height="21"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIN-pY-eUx">
                                     <rect key="frame" x="20" y="107" width="67" height="21"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Fat:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Hl-rs-dh1">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total Fat:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Hl-rs-dh1">
                                     <rect key="frame" x="20" y="136" width="76" height="21"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protein:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzm-Qk-yY6">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Protein:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzm-Qk-yY6">
                                     <rect key="frame" x="20" y="165" width="66" height="21"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GAh-tz-uDd">
@@ -374,7 +375,7 @@
                                         </mask>
                                     </variation>
                                 </imageView>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Details: " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DRM-EY-jr6">
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="Details: " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DRM-EY-jr6">
                                     <rect key="frame" x="20" y="194" width="560" height="62"/>
                                     <animations/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -427,7 +428,7 @@
                                 <rect key="frame" x="0.0" y="292" width="600" height="197"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="elg-Aa-j1E" id="ED8-yY-MUy">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="196"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="196.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9HZ-we-1TI">
@@ -439,8 +440,8 @@
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
-                                                    <exclude reference="i4f-EA-ucu"/>
                                                     <exclude reference="ftZ-h5-Geh"/>
+                                                    <exclude reference="i4f-EA-ucu"/>
                                                 </mask>
                                             </variation>
                                         </imageView>
@@ -453,8 +454,8 @@
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
-                                                    <exclude reference="tmW-Zp-BYx"/>
                                                     <exclude reference="Zii-cQ-CcA"/>
+                                                    <exclude reference="tmW-Zp-BYx"/>
                                                 </mask>
                                             </variation>
                                         </imageView>
@@ -488,46 +489,46 @@
                                                 </mask>
                                             </variation>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Alternate Food:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clI-6i-1wF">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Alternate Food:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clI-6i-1wF">
                                             <rect key="frame" x="-112" y="16" width="191" height="30"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="25"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Nutrition Facts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eP9-1K-r1R">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nutrition Facts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eP9-1K-r1R">
                                             <rect key="frame" x="16" y="54" width="74" height="12"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Serving Size:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sss-r6-xwe">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Serving Size:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sss-r6-xwe">
                                             <rect key="frame" x="16" y="74" width="106" height="21"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whr-H2-7XL">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whr-H2-7XL">
                                             <rect key="frame" x="16" y="103" width="67" height="21"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Total Fat:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpm-X4-azM">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total Fat:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpm-X4-azM">
                                             <rect key="frame" x="16" y="132" width="76" height="21"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Protein:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vI-fP-yLy">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Protein:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vI-fP-yLy">
                                             <rect key="frame" x="16" y="161" width="66" height="21"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CIb-GD-MeF">
@@ -636,14 +637,14 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="132"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vw0-AL-PDo" id="09d-2p-dXh">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="131"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="131.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sh1-Kw-Vy6">
                                             <rect key="frame" x="8" y="8" width="42" height="21"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -698,7 +699,7 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kP2-mb-qv7" id="PCt-hF-PgV">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -715,6 +716,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="48e-8J-bpF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="222" y="2235"/>
+        </scene>
+        <!--Shopping List-->
+        <scene sceneID="GGW-u9-uwv">
+            <objects>
+                <tableViewController id="voF-Yv-Y2X" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="0xS-Cq-ETI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="rsL-h8-nQ2">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rsL-h8-nQ2" id="eJX-fC-pbG">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="voF-Yv-Y2X" id="PeO-qm-FC6"/>
+                            <outlet property="delegate" destination="voF-Yv-Y2X" id="74U-vP-SKs"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Shopping List" image="list" selectedImage="list" id="9XS-wD-bWk"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wXo-Xr-AaX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248" y="3042"/>
         </scene>
         <!--Research-->
         <scene sceneID="ExD-A7-1as">
@@ -740,6 +770,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="list" width="30" height="30"/>
         <image name="profile" width="30" height="30"/>
         <image name="research" width="30" height="30"/>
         <image name="shopping" width="30" height="30"/>
