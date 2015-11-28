@@ -37,8 +37,8 @@ class ResearchTVC: UITableViewController, UISearchResultsUpdating, UISearchBarDe
         //tableView.delegate = self
         
         tableView.tableFooterView = UIView() //adds footer to hide extra separators
-        
-        //definesPresentationContext = true;
+        //prevents clearing when returning from tab controller
+        definesPresentationContext = true;
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
