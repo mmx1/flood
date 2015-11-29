@@ -17,6 +17,9 @@ class ResearchTVC: UITableViewController, UISearchResultsUpdating, UISearchBarDe
     var searchResults:[[String:AnyObject]] = []
     let searchDictionary = NSUserDefaults.standardUserDefaults().dictionaryForKey("foodDictionary")
         
+    @IBOutlet weak var footerView: UIView!
+    @IBOutlet weak var scanButton: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -36,10 +39,11 @@ class ResearchTVC: UITableViewController, UISearchResultsUpdating, UISearchBarDe
         tableView.tableHeaderView = searchController.searchBar
         //tableView.delegate = self
         
-        tableView.tableFooterView = UIView() //adds footer to hide extra separators
+        tableView.tableFooterView = footerView
         
         //prevents clearing when returning from tab controller
         definesPresentationContext = true
+        
         
 
         // Uncomment the following line to preserve selection between presentations
@@ -52,6 +56,8 @@ class ResearchTVC: UITableViewController, UISearchResultsUpdating, UISearchBarDe
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         searchController.searchBar.hidden = false
+        tableView.tableHeaderView = searchController.searchBar
+        
         tableView.setNeedsLayout()
     }
     
@@ -68,8 +74,6 @@ class ResearchTVC: UITableViewController, UISearchResultsUpdating, UISearchBarDe
     func searchBar(searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
         updateSearchResultsForSearchController(searchController)
     }
-
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -90,6 +94,7 @@ class ResearchTVC: UITableViewController, UISearchResultsUpdating, UISearchBarDe
                     
             }
         }
+        tableView.tableFooterView = UIView()
         tableView.reloadData()
         //enableCancelButton(searchBar)
     }

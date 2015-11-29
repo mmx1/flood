@@ -17,6 +17,7 @@ class ResearchDetailTVC: UITableViewController {
     @IBOutlet weak var fatLabel: UILabel!
     @IBOutlet weak var proteinLabel: UILabel!
     @IBOutlet weak var detailsLabel: UILabel!
+    @IBOutlet weak var waterLabel: UILabel!
     
     @IBOutlet var waterDrops:[UIImageView]!
     
@@ -50,47 +51,52 @@ class ResearchDetailTVC: UITableViewController {
     }
     
     func update(){
-        if  let data = detailResult,
+        guard let data = detailResult,
             name = data["name"] as? String,
             servingSize = data["servingSize"] as? String,
             calories = data["calories"] as? Int,
             fat = data["fatGrams"] as? Int,
             protein = data["proteinGrams"] as? Int,
             rating = data["rating"] as? Int,
-            details = data["text"] as? String
-        {
-            nameLabel.text = name
-            servingLabel.text = "Serving Size: \(servingSize)"
-            calorieLabel.text = "Calories: \(calories)"
-            fatLabel.text = "Fat: \(fat) grams"
-            proteinLabel.text = "Protein: \(protein) grams"
-            detailsLabel.text = "Details:\n\(details)"
-            detailsLabel.sizeToFit()
-            //waterLabel.text = "Water usage: \(searchResult["name"]) gal/lb"
-            
-            for i in 0...4{
-                if i < rating {
-                    waterDrops[i].image = UIImage(named: "waterBlue")
-                }else{
-                    waterDrops[i].image = UIImage(named: "waterGrey")
-                }
-            }
-            if let suggestionNames = data["suggestions"] as? [String],
-                sDictionary = foodData {
-                    for suggestion in suggestionNames {
-                        for key in sDictionary.keys {
-                            if var result = sDictionary[key] as? [String:AnyObject]
-                                where key == suggestion {
-                                    result["name"] = key;
-                                    suggestions.append(result)
-                            }
-                            
-                        }
-                    }
-            }
+            details = data["text"] as? String,
+            waterUsage = data["waterUsageGalPerLb"] as? Int else {
+            return
         }
         
-       
+        nameLabel.text = name
+        servingLabel.text = "Serving Size: \(servingSize)"
+        calorieLabel.text = "Calories: \(calories)"
+        fatLabel.text = "Fat: \(fat) grams"
+        proteinLabel.text = "Protein: \(protein) grams"
+        detailsLabel.text = "Details:\n\(details)"
+        detailsLabel.sizeToFit()
+        let orangeColor = UIColor(red: 255/255, green: 103/255, blue: 0, alpha: 1)
+        waterLabel.text = "\(waterUsage) gal/lb"
+        waterLabel.textColor = orangeColor
+        
+        
+        for i in 0...4{
+            if i < rating {
+                waterDrops[i].image = UIImage(named: "waterBlue")
+            }else{
+                waterDrops[i].image = UIImage(named: "waterGrey")
+            }
+        }
+        guard let suggestionNames = data["suggestions"] as? [String],
+            sDictionary = foodData else {
+                return
+        }
+        for suggestion in suggestionNames {
+            for key in sDictionary.keys {
+                if var result = sDictionary[key] as? [String:AnyObject]
+                    where key == suggestion {
+                        result["name"] = key;
+                        suggestions.append(result)
+                }
+                
+            }
+        }
+    
         tableView.setNeedsLayout()
         tableView.reloadData()
     }

@@ -9,14 +9,6 @@
 import UIKit
 
 class bracketView: UIView {
-
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
-    }
-    */
     
     override func drawRect(rect: CGRect) {
         
@@ -60,31 +52,6 @@ class bracketView: UIView {
         CGPathAddLineToPoint(path, nil, originXY.x, originXY.y - offset)
         CGContextAddPath(context, path)
         CGContextDrawPath(context, .Stroke )
-
-        
-        /*
-        let width = CGFloat(10)
-        let inset = CGFloat(size/4)
-        
-        
-        
-        CGContextSetFillColorWithColor(context, transparentBlue)
-        
-        CGContextFillRect(context, baseRectangle)
-        //CGContextStrokeRect(context, baseRectangle)
-        print(baseRectangle)
-        
-        
-        let innerRectangle = CGRectInset(baseRectangle, width, width)
-        CGContextSetFillColorWithColor(context, UIColor.clearColor().CGColor)
-        CGContextSetStrokeColorWithColor(context, UIColor.clearColor().CGColor)
-        CGContextFillRect(context, innerRectangle)
-        print(innerRectangle)
-
-        */
-
-        
-        
         
     }
 

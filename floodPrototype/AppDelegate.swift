@@ -16,31 +16,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func setHardCodeData(){
         
         let currentVersion = NSUserDefaults.standardUserDefaults().floatForKey("dataVersion");
-        if let path = NSBundle.mainBundle().pathForResource("foodData", ofType: "json") {
-            do {
-                let jsonData = try NSData(contentsOfURL: NSURL(fileURLWithPath: path), options: NSDataReadingOptions.DataReadingMappedIfSafe)
-                
-                let jsonResult = try NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.MutableContainers)
-                
-                
-                if let jsonDictionary = jsonResult as? [String:AnyObject],
-                    //let newVersion = jsonDictionary["version"] as? Float where currentVersion < newVersion,
-                    let foodItems = jsonDictionary["foods"] as? [String:AnyObject]{
-                    
-                        NSUserDefaults.standardUserDefaults().setObject(foodItems, forKey: "foodDictionary")
-                        
-                        NSUserDefaults.standardUserDefaults().setFloat(jsonResult["version"] as! Float, forKey: "dataVersion")
-                    
-                    
-                }
-                
-                
-            } catch let error as NSError {
-                print(error.localizedDescription)
-            }
-        } else {
+        guard let path = NSBundle.mainBundle().pathForResource("foodData", ofType: "json") else {
             print("Invalid filename/path.")
+            return
         }
+        do {
+            let jsonData = try NSData(contentsOfURL: NSURL(fileURLWithPath: path), options: NSDataReadingOptions.DataReadingMappedIfSafe)
+            
+            let jsonResult = try NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.MutableContainers)
+            
+            
+            if let jsonDictionary = jsonResult as? [String:AnyObject],
+                //let newVersion = jsonDictionary["version"] as? Float where currentVersion < newVersion,
+                let foodItems = jsonDictionary["foods"] as? [String:AnyObject]{
+                    
+                    NSUserDefaults.standardUserDefaults().setObject(foodItems, forKey: "foodDictionary")
+                    
+                    NSUserDefaults.standardUserDefaults().setFloat(jsonResult["version"] as! Float, forKey: "dataVersion")
+                    
+                    
+            }
+            
+            
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+        
     }
     
     func listFonts(){
