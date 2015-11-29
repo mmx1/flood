@@ -55,21 +55,21 @@
         <scene sceneID="GCd-1m-w8z">
             <objects>
                 <tableViewController storyboardIdentifier="ResearchTVC" id="sAn-qN-l3c" customClass="ResearchTVC" customModule="floodPrototype" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="223" sectionHeaderHeight="28" sectionFooterHeight="28" id="Dxk-k5-v9E">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="211" sectionHeaderHeight="28" sectionFooterHeight="28" id="Dxk-k5-v9E">
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="researchCell" rowHeight="223" id="UVp-83-ubL" customClass="researchTVCell" customModule="floodPrototype" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="223"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="researchCell" rowHeight="211" id="UVp-83-ubL" customClass="researchTVCell" customModule="floodPrototype" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="211"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UVp-83-ubL" id="hy2-Nb-CCO">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="222.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="210.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WTX-y7-LiJ">
-                                            <rect key="frame" x="502" y="16" width="30" height="50"/>
+                                            <rect key="frame" x="547" y="16" width="15" height="25"/>
                                             <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="100" id="OZa-cD-qHp"/>
@@ -83,7 +83,7 @@
                                             </variation>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k1r-R9-EDe">
-                                            <rect key="frame" x="442" y="16" width="30" height="50"/>
+                                            <rect key="frame" x="517" y="16" width="15" height="25"/>
                                             <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="30" id="71U-DU-2BQ"/>
@@ -97,7 +97,7 @@
                                             </variation>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fJb-m9-Lix">
-                                            <rect key="frame" x="532" y="16" width="30" height="50"/>
+                                            <rect key="frame" x="562" y="16" width="15" height="25"/>
                                             <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="100" id="iha-KU-f4P"/>
@@ -111,11 +111,11 @@
                                             </variation>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="guf-BQ-LnH">
-                                            <rect key="frame" x="562" y="16" width="30" height="50"/>
+                                            <rect key="frame" x="577" y="16" width="15" height="25"/>
                                             <animations/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="30" id="Dm9-lf-l2H"/>
-                                                <constraint firstAttribute="height" constant="50" id="Dxt-NE-gAI"/>
+                                                <constraint firstAttribute="width" constant="15" id="Dm9-lf-l2H"/>
+                                                <constraint firstAttribute="height" constant="25" id="Dxt-NE-gAI"/>
                                                 <constraint firstAttribute="width" constant="60" id="Wt9-JE-C0e"/>
                                                 <constraint firstAttribute="height" constant="100" id="r9H-pT-DwX"/>
                                             </constraints>
@@ -141,14 +141,14 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Serving Size:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6e-P3-eQv">
-                                            <rect key="frame" x="16" y="74" width="106" height="21"/>
+                                            <rect key="frame" x="16" y="74" width="106" height="20.5"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYd-aA-bZV">
-                                            <rect key="frame" x="16" y="103" width="67" height="21"/>
+                                            <rect key="frame" x="16" y="102.5" width="67" height="20.5"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -169,7 +169,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kRp-Rt-llv">
-                                            <rect key="frame" x="472" y="16" width="30" height="50"/>
+                                            <rect key="frame" x="532" y="16" width="15" height="25"/>
                                             <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="60" id="XiU-TS-HDu"/>
@@ -258,11 +258,11 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="twx-Ad-jlq">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="264"/>
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="296"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C2P-wM-vkP">
-                                    <rect key="frame" x="490" y="20" width="30" height="50"/>
+                                    <rect key="frame" x="535" y="20" width="15" height="25"/>
                                     <animations/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="60" id="4W5-Pd-T3c"/>
@@ -276,7 +276,7 @@
                                     </variation>
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gt9-zQ-27S">
-                                    <rect key="frame" x="430" y="20" width="30" height="50"/>
+                                    <rect key="frame" x="505" y="20" width="15" height="25"/>
                                     <animations/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="30" id="ImG-08-pk1"/>
@@ -290,7 +290,7 @@
                                     </variation>
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gSe-0P-VlO">
-                                    <rect key="frame" x="520" y="20" width="30" height="50"/>
+                                    <rect key="frame" x="550" y="20" width="15" height="25"/>
                                     <animations/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="60" id="KUw-4Q-6hd"/>
@@ -304,12 +304,12 @@
                                     </variation>
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ba9-e1-JwX">
-                                    <rect key="frame" x="550" y="20" width="30" height="50"/>
+                                    <rect key="frame" x="565" y="20" width="15" height="25"/>
                                     <animations/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="50" id="1PG-Wm-v0b"/>
+                                        <constraint firstAttribute="height" constant="25" id="1PG-Wm-v0b"/>
                                         <constraint firstAttribute="height" constant="100" id="5He-AB-ito"/>
-                                        <constraint firstAttribute="width" constant="30" id="D4P-xJ-Fst"/>
+                                        <constraint firstAttribute="width" constant="15" id="D4P-xJ-Fst"/>
                                         <constraint firstAttribute="width" constant="60" id="dX0-tn-ytc"/>
                                     </constraints>
                                     <variation key="default">
@@ -319,50 +319,50 @@
                                         </mask>
                                     </variation>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Detail Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHK-Ng-MA7">
-                                    <rect key="frame" x="-60" y="20" width="143" height="30"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Detail Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHK-Ng-MA7">
+                                    <rect key="frame" x="20" y="20" width="142.5" height="30"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="25"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nutrition Facts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nV1-c5-9LY">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Nutrition Facts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nV1-c5-9LY">
                                     <rect key="frame" x="20" y="58" width="74" height="12"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Serving Size:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgG-8K-1hY">
-                                    <rect key="frame" x="20" y="78" width="106" height="21"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Serving Size:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgG-8K-1hY">
+                                    <rect key="frame" x="20" y="78" width="106" height="20.5"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIN-pY-eUx">
-                                    <rect key="frame" x="20" y="107" width="67" height="21"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIN-pY-eUx">
+                                    <rect key="frame" x="20" y="106" width="67" height="20.5"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total Fat:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Hl-rs-dh1">
-                                    <rect key="frame" x="20" y="136" width="76" height="21"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Total Fat:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Hl-rs-dh1">
+                                    <rect key="frame" x="20" y="135" width="76" height="20.5"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Protein:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzm-Qk-yY6">
-                                    <rect key="frame" x="20" y="165" width="66" height="21"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Protein:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzm-Qk-yY6">
+                                    <rect key="frame" x="20" y="163" width="65.5" height="20.5"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GAh-tz-uDd">
-                                    <rect key="frame" x="460" y="20" width="30" height="50"/>
+                                    <rect key="frame" x="520" y="20" width="15" height="25"/>
                                     <animations/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="60" id="Cuz-z9-nfa"/>
@@ -375,13 +375,12 @@
                                         </mask>
                                     </variation>
                                 </imageView>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="Details: " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DRM-EY-jr6">
-                                    <rect key="frame" x="20" y="194" width="560" height="62"/>
-                                    <animations/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                </textView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1e-No-Ko5">
+                                    <rect key="frame" x="20" y="192" width="572" height="18"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <animations/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -389,13 +388,14 @@
                                 <constraint firstItem="8Hl-rs-dh1" firstAttribute="leading" secondItem="ZHK-Ng-MA7" secondAttribute="leading" id="1Xb-8g-B7O"/>
                                 <constraint firstItem="GAh-tz-uDd" firstAttribute="leading" secondItem="gt9-zQ-27S" secondAttribute="trailing" id="2iy-db-Lv6"/>
                                 <constraint firstItem="ba9-e1-JwX" firstAttribute="height" secondItem="GAh-tz-uDd" secondAttribute="height" id="6Th-u2-jRF"/>
+                                <constraint firstAttribute="bottom" secondItem="L1e-No-Ko5" secondAttribute="bottom" constant="8" id="8b6-y0-LPa"/>
                                 <constraint firstItem="ba9-e1-JwX" firstAttribute="width" secondItem="GAh-tz-uDd" secondAttribute="width" id="9Vw-Vi-gnl"/>
+                                <constraint firstItem="L1e-No-Ko5" firstAttribute="leading" secondItem="Rzm-Qk-yY6" secondAttribute="leading" id="BT5-0v-kZc"/>
+                                <constraint firstItem="L1e-No-Ko5" firstAttribute="top" secondItem="Rzm-Qk-yY6" secondAttribute="bottom" constant="8" id="CeB-xH-jib"/>
                                 <constraint firstItem="ZHK-Ng-MA7" firstAttribute="leading" secondItem="twx-Ad-jlq" secondAttribute="leading" constant="20" symbolic="YES" id="D2E-T9-sa1"/>
-                                <constraint firstItem="DRM-EY-jr6" firstAttribute="top" secondItem="Rzm-Qk-yY6" secondAttribute="bottom" constant="8" symbolic="YES" id="GPc-Qp-ggS"/>
                                 <constraint firstItem="ba9-e1-JwX" firstAttribute="width" secondItem="gSe-0P-VlO" secondAttribute="width" id="HaB-a4-SwF"/>
                                 <constraint firstItem="nV1-c5-9LY" firstAttribute="leading" secondItem="ZHK-Ng-MA7" secondAttribute="leading" id="KDU-yY-SSW"/>
                                 <constraint firstItem="ba9-e1-JwX" firstAttribute="width" secondItem="GAh-tz-uDd" secondAttribute="width" id="NKA-Kh-Ink"/>
-                                <constraint firstItem="DRM-EY-jr6" firstAttribute="leading" secondItem="twx-Ad-jlq" secondAttribute="leading" constant="20" symbolic="YES" id="Nid-v1-VTG"/>
                                 <constraint firstAttribute="trailing" secondItem="ba9-e1-JwX" secondAttribute="trailing" constant="20" symbolic="YES" id="NkW-hd-dM2"/>
                                 <constraint firstItem="ba9-e1-JwX" firstAttribute="width" secondItem="gt9-zQ-27S" secondAttribute="width" id="P8g-He-DS8"/>
                                 <constraint firstItem="ba9-e1-JwX" firstAttribute="top" secondItem="gt9-zQ-27S" secondAttribute="top" id="QUo-jI-XSD"/>
@@ -404,8 +404,8 @@
                                 <constraint firstItem="Rzm-Qk-yY6" firstAttribute="leading" secondItem="ZHK-Ng-MA7" secondAttribute="leading" id="Sj3-L9-tDA"/>
                                 <constraint firstItem="FIN-pY-eUx" firstAttribute="leading" secondItem="ZHK-Ng-MA7" secondAttribute="leading" id="TnC-d9-V79"/>
                                 <constraint firstItem="GAh-tz-uDd" firstAttribute="top" secondItem="gt9-zQ-27S" secondAttribute="top" id="UFG-KL-0k2"/>
+                                <constraint firstItem="ZHK-Ng-MA7" firstAttribute="top" secondItem="gt9-zQ-27S" secondAttribute="top" id="VSi-QF-xab"/>
                                 <constraint firstItem="ba9-e1-JwX" firstAttribute="width" secondItem="C2P-wM-vkP" secondAttribute="width" id="ZYy-Je-Ki4"/>
-                                <constraint firstAttribute="bottom" secondItem="DRM-EY-jr6" secondAttribute="bottom" constant="8" id="a5R-74-qq5"/>
                                 <constraint firstItem="ba9-e1-JwX" firstAttribute="height" secondItem="C2P-wM-vkP" secondAttribute="height" id="ck7-7a-byx"/>
                                 <constraint firstItem="lgG-8K-1hY" firstAttribute="leading" secondItem="ZHK-Ng-MA7" secondAttribute="leading" id="dvW-es-dJ6"/>
                                 <constraint firstItem="gSe-0P-VlO" firstAttribute="leading" secondItem="C2P-wM-vkP" secondAttribute="trailing" id="ehZ-N4-45W"/>
@@ -415,7 +415,7 @@
                                 <constraint firstItem="Rzm-Qk-yY6" firstAttribute="top" secondItem="8Hl-rs-dh1" secondAttribute="bottom" constant="8" symbolic="YES" id="lHQ-9J-iZO"/>
                                 <constraint firstItem="ba9-e1-JwX" firstAttribute="height" secondItem="gSe-0P-VlO" secondAttribute="height" id="lbH-BG-SKr"/>
                                 <constraint firstItem="ba9-e1-JwX" firstAttribute="height" secondItem="gt9-zQ-27S" secondAttribute="height" id="nSj-hH-KCx"/>
-                                <constraint firstAttribute="trailing" secondItem="DRM-EY-jr6" secondAttribute="trailing" constant="20" symbolic="YES" id="og9-K8-TPQ"/>
+                                <constraint firstAttribute="trailing" secondItem="L1e-No-Ko5" secondAttribute="trailing" constant="8" id="o2w-8I-qND"/>
                                 <constraint firstItem="gSe-0P-VlO" firstAttribute="top" secondItem="gt9-zQ-27S" secondAttribute="top" id="tGd-l3-xGa"/>
                                 <constraint firstItem="C2P-wM-vkP" firstAttribute="leading" secondItem="GAh-tz-uDd" secondAttribute="trailing" id="uTw-k4-AYF"/>
                                 <constraint firstItem="C2P-wM-vkP" firstAttribute="top" secondItem="gt9-zQ-27S" secondAttribute="top" id="ul8-Oo-fm4"/>
@@ -425,14 +425,14 @@
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="researchCell" rowHeight="197" id="elg-Aa-j1E" customClass="researchTVCell" customModule="floodPrototype" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="292" width="600" height="197"/>
+                                <rect key="frame" x="0.0" y="324" width="600" height="197"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="elg-Aa-j1E" id="ED8-yY-MUy">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="196.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9HZ-we-1TI">
-                                            <rect key="frame" x="502" y="16" width="30" height="50"/>
+                                            <rect key="frame" x="547" y="16" width="15" height="25"/>
                                             <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="60" id="ftZ-h5-Geh"/>
@@ -445,22 +445,8 @@
                                                 </mask>
                                             </variation>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bik-DN-gjL">
-                                            <rect key="frame" x="442" y="16" width="30" height="50"/>
-                                            <animations/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="50" id="Zii-cQ-CcA"/>
-                                                <constraint firstAttribute="width" constant="30" id="tmW-Zp-BYx"/>
-                                            </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="Zii-cQ-CcA"/>
-                                                    <exclude reference="tmW-Zp-BYx"/>
-                                                </mask>
-                                            </variation>
-                                        </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sR8-RU-xf8">
-                                            <rect key="frame" x="532" y="16" width="30" height="50"/>
+                                            <rect key="frame" x="562" y="16" width="15" height="25"/>
                                             <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="100" id="7cW-hr-Q08"/>
@@ -474,13 +460,13 @@
                                             </variation>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H7P-FK-FS6">
-                                            <rect key="frame" x="562" y="16" width="30" height="50"/>
+                                            <rect key="frame" x="577" y="16" width="15" height="25"/>
                                             <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="60" id="1lC-fs-duV"/>
                                                 <constraint firstAttribute="height" constant="100" id="5uk-wn-zaY"/>
-                                                <constraint firstAttribute="height" constant="50" id="9jO-pO-n7Z"/>
-                                                <constraint firstAttribute="width" constant="30" id="X2m-db-Yj1"/>
+                                                <constraint firstAttribute="height" constant="25" id="9jO-pO-n7Z"/>
+                                                <constraint firstAttribute="width" constant="15" id="X2m-db-Yj1"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
@@ -489,8 +475,8 @@
                                                 </mask>
                                             </variation>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Alternate Food:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clI-6i-1wF">
-                                            <rect key="frame" x="-112" y="16" width="191" height="30"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alternate Food:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clI-6i-1wF">
+                                            <rect key="frame" x="16" y="16" width="191" height="30"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="25"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -504,35 +490,35 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Serving Size:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sss-r6-xwe">
-                                            <rect key="frame" x="16" y="74" width="106" height="21"/>
+                                            <rect key="frame" x="16" y="74" width="106" height="20.5"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whr-H2-7XL">
-                                            <rect key="frame" x="16" y="103" width="67" height="21"/>
+                                            <rect key="frame" x="16" y="102.5" width="67" height="20.5"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total Fat:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpm-X4-azM">
-                                            <rect key="frame" x="16" y="132" width="76" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Fat:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpm-X4-azM">
+                                            <rect key="frame" x="16" y="131" width="76" height="20.5"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Protein:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vI-fP-yLy">
-                                            <rect key="frame" x="16" y="161" width="66" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protein:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vI-fP-yLy">
+                                            <rect key="frame" x="16" y="159.5" width="65.5" height="20.5"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CIb-GD-MeF">
-                                            <rect key="frame" x="472" y="16" width="30" height="50"/>
+                                            <rect key="frame" x="532" y="16" width="15" height="25"/>
                                             <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="60" id="7iI-A4-aZM"/>
@@ -542,6 +528,20 @@
                                                 <mask key="constraints">
                                                     <exclude reference="7iI-A4-aZM"/>
                                                     <exclude reference="Rzy-KS-bhv"/>
+                                                </mask>
+                                            </variation>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bik-DN-gjL">
+                                            <rect key="frame" x="517" y="16" width="15" height="25"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="Zii-cQ-CcA"/>
+                                                <constraint firstAttribute="width" constant="30" id="tmW-Zp-BYx"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="Zii-cQ-CcA"/>
+                                                    <exclude reference="tmW-Zp-BYx"/>
                                                 </mask>
                                             </variation>
                                         </imageView>
@@ -606,7 +606,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="calorieLabel" destination="FIN-pY-eUx" id="OiI-nB-sGM"/>
-                        <outlet property="detailsTextView" destination="DRM-EY-jr6" id="blF-5s-bFZ"/>
+                        <outlet property="detailsLabel" destination="L1e-No-Ko5" id="Ioq-tq-9tC"/>
                         <outlet property="fatLabel" destination="8Hl-rs-dh1" id="WdI-I8-Psj"/>
                         <outlet property="nameLabel" destination="ZHK-Ng-MA7" id="kxC-g8-WNl"/>
                         <outlet property="nutritionLabel" destination="nV1-c5-9LY" id="mNs-jT-hlI"/>

@@ -37,8 +37,10 @@ class ResearchTVC: UITableViewController, UISearchResultsUpdating, UISearchBarDe
         //tableView.delegate = self
         
         tableView.tableFooterView = UIView() //adds footer to hide extra separators
+        
         //prevents clearing when returning from tab controller
-        definesPresentationContext = true;
+        definesPresentationContext = true
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -50,6 +52,7 @@ class ResearchTVC: UITableViewController, UISearchResultsUpdating, UISearchBarDe
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         searchController.searchBar.hidden = false
+        tableView.setNeedsLayout()
     }
     
     func searchFor(text:String){

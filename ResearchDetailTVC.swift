@@ -16,7 +16,7 @@ class ResearchDetailTVC: UITableViewController {
     @IBOutlet weak var calorieLabel: UILabel!
     @IBOutlet weak var fatLabel: UILabel!
     @IBOutlet weak var proteinLabel: UILabel!
-    @IBOutlet weak var detailsTextView: UITextView!
+    @IBOutlet weak var detailsLabel: UILabel!
     
     @IBOutlet var waterDrops:[UIImageView]!
     
@@ -32,6 +32,9 @@ class ResearchDetailTVC: UITableViewController {
         
         navigationController?.navigationBar.barTintColor = standardBlue
         navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        
+        tableView.estimatedRowHeight = 300.0
+        tableView.rowHeight = UITableViewAutomaticDimension
         
         //tableView.tableFooterView = UIView()
         update()
@@ -61,7 +64,8 @@ class ResearchDetailTVC: UITableViewController {
             calorieLabel.text = "Calories: \(calories)"
             fatLabel.text = "Fat: \(fat) grams"
             proteinLabel.text = "Protein: \(protein) grams"
-            detailsTextView.text = "Details: \(details)"
+            detailsLabel.text = "Details:\n\(details)"
+            detailsLabel.sizeToFit()
             //waterLabel.text = "Water usage: \(searchResult["name"]) gal/lb"
             
             for i in 0...4{
