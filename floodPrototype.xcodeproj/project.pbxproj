@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		150FD2A01C0A59D100E2EBE5 /* shoppingListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150FD29F1C0A59D100E2EBE5 /* shoppingListTVC.swift */; };
 		150FD2A21C0A89DF00E2EBE5 /* ScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150FD2A11C0A89DF00E2EBE5 /* ScanVC.swift */; };
+		150FD2A41C0AACEF00E2EBE5 /* bracketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150FD2A31C0AACEF00E2EBE5 /* bracketView.swift */; };
 		153097761BF68A9B0076ACA7 /* ResearchTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153097751BF68A9B0076ACA7 /* ResearchTVC.swift */; };
 		153097771BF68A9B0076ACA7 /* ResearchTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153097751BF68A9B0076ACA7 /* ResearchTVC.swift */; };
 		15646B391BF2564100D2EFB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15646B381BF2564100D2EFB4 /* AppDelegate.swift */; };
@@ -57,6 +58,7 @@
 /* Begin PBXFileReference section */
 		150FD29F1C0A59D100E2EBE5 /* shoppingListTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shoppingListTVC.swift; sourceTree = "<group>"; };
 		150FD2A11C0A89DF00E2EBE5 /* ScanVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanVC.swift; sourceTree = "<group>"; };
+		150FD2A31C0AACEF00E2EBE5 /* bracketView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bracketView.swift; sourceTree = "<group>"; };
 		153097751BF68A9B0076ACA7 /* ResearchTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResearchTVC.swift; sourceTree = "<group>"; };
 		15646B351BF2564100D2EFB4 /* floodPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = floodPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15646B381BF2564100D2EFB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			children = (
 				1571B4A61BFEDD7200A809CA /* ResearchDetailTVC.swift */,
 				150FD2A11C0A89DF00E2EBE5 /* ScanVC.swift */,
+				150FD2A31C0AACEF00E2EBE5 /* bracketView.swift */,
 				15646B381BF2564100D2EFB4 /* AppDelegate.swift */,
 				153097751BF68A9B0076ACA7 /* ResearchTVC.swift */,
 				1571AC9C1BF25B1000C35B5B /* MenuTVC.swift */,
@@ -318,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				150FD2A41C0AACEF00E2EBE5 /* bracketView.swift in Sources */,
 				15B991D01BFB0AD7008C6ECF /* researchTVCell.swift in Sources */,
 				1571AC9D1BF25B1000C35B5B /* MenuTVC.swift in Sources */,
 				15B991CC1BFAF84C008C6ECF /* TabBarController.swift in Sources */,

@@ -59,7 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setHardCodeData();
         
         let standardBlue = UIColor(colorLiteralRed: 74/255,
-            green: 135/255, blue: 238/255, alpha: 100/255)
+            green: 135/255, blue: 238/255, alpha: 1)
 
         UINavigationBar.appearance().barTintColor = standardBlue
         UISearchBar.appearance().barTintColor = standardBlue

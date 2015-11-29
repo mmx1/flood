@@ -20,7 +20,9 @@ class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     var highlightView = UIView()
     
     @IBOutlet weak var instructions: UILabel!
-    
+    @IBOutlet weak var previewView: UIView!
+    @IBOutlet weak var bracketView: UIView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,7 +32,13 @@ class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         highlightView.layer.borderColor = UIColor.greenColor().CGColor
         highlightView.layer.borderWidth = 3
         
-        view.addSubview(highlightView)
+        bracketView.addSubview(highlightView)
+        
+        let standardBlue = UIColor(colorLiteralRed: 74/255,
+            green: 135/255, blue: 238/255, alpha: 1)
+        instructions.backgroundColor = standardBlue
+        view.backgroundColor = standardBlue
+        view.tintColor = UIColor.whiteColor()
         
         do{
             input =  try AVCaptureDeviceInput(device: device)
@@ -41,13 +49,14 @@ class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
             output?.metadataObjectTypes = output?.availableMetadataObjectTypes
             
             previewLayer = AVCaptureVideoPreviewLayer(session: session)
-            previewLayer?.frame = view.bounds
+            previewLayer?.frame = previewView.bounds
             previewLayer?.videoGravity = AVLayerVideoGravityResizeAspectFill
-            view.layer.addSublayer(previewLayer!)
+            previewView.layer.addSublayer(previewLayer!)
             
-            instructions.text = "Scan a QR code from your receipt to learn more about your water consumption"
+            instructions.text = "Center the camera on your receipt"
             instructions.sizeToFit()
-            view.bringSubviewToFront(instructions)
+            previewView.bringSubviewToFront(instructions)
+            view.bringSubviewToFront(bracketView)
             
             session.startRunning()
             
@@ -56,6 +65,10 @@ class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
             instructions.text = "Camera could not start. Please enable access to the camera in the iOS Settings"
         }
         // Do any additional setup after loading the view.
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -87,7 +100,8 @@ class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     }
     
     func orientationChanged(notification:NSNotification){
-        previewLayer?.frame = view.bounds
+        previewLayer?.frame = previewView.bounds
+        bracketView.setNeedsDisplay()
         
         if previewLayer?.connection != nil {
             let orientation = UIApplication.sharedApplication().statusBarOrientation
@@ -112,7 +126,7 @@ class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         }
         print(detectionString);
         highlightView.frame = highlightViewRect
-        view.bringSubviewToFront(self.highlightView)
+        //view.bringSubviewToFront(self.highlightView)
         
     }
 
