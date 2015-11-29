@@ -26,6 +26,7 @@
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -668,7 +669,7 @@
         <!--Checkout-->
         <scene sceneID="GH6-jV-WdB">
             <objects>
-                <viewController storyboardIdentifier="CheckoutVC" id="8ut-0q-Nh6" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CheckoutVC" id="8ut-0q-Nh6" customClass="ScanVC" customModule="floodPrototype" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gUw-t7-hAq"/>
                         <viewControllerLayoutGuide type="bottom" id="VdD-wi-qor"/>
@@ -676,10 +677,27 @@
                     <view key="view" contentMode="scaleToFill" id="f1g-yv-dTX">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please Scan a Receipt" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUK-6k-wSQ">
+                                <rect key="frame" x="0.0" y="522" width="600" height="20.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VdD-wi-qor" firstAttribute="top" secondItem="UUK-6k-wSQ" secondAttribute="bottom" id="65b-HJ-EEz"/>
+                            <constraint firstItem="UUK-6k-wSQ" firstAttribute="leading" secondItem="f1g-yv-dTX" secondAttribute="leadingMargin" constant="-20" id="gfA-Lg-cO6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UUK-6k-wSQ" secondAttribute="trailing" constant="-20" id="krf-6S-SkT"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Checkout" image="shopping" selectedImage="shopping" id="qkb-eR-FMN"/>
+                    <connections>
+                        <outlet property="instructions" destination="UUK-6k-wSQ" id="mU2-8G-BLY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ab-le-mwY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
