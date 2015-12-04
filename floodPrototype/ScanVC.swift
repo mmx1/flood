@@ -19,6 +19,8 @@ class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
     var highlightView = UIView()
     
+    let validReceiptIDs = ["1ga3t15z"]
+    
     @IBOutlet weak var instructions: UILabel!
     @IBOutlet weak var previewView: UIView!
     @IBOutlet weak var bracketView: UIView!
@@ -126,8 +128,65 @@ class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         }
         print(detectionString);
         highlightView.frame = highlightViewRect
+        
+        capturedQRCode(detectionString);
         //view.bringSubviewToFront(self.highlightView)
         
+    }
+    
+    func resumeScanning(){
+        session.startRunning()
+        highlightView.frame = CGRectZero
+    }
+    
+    func capturedQRCode(codeString:String?){
+        print(codeString)
+        guard let codeData = codeString?.dataUsingEncoding(NSUTF8StringEncoding) else {
+            resumeScanning()
+            return
+        }
+        do{
+            let jsonResult = try NSJSONSerialization.JSONObjectWithData(codeData, options: NSJSONReadingOptions.MutableContainers)
+            if let jsonDictionary = jsonResult as? [String:AnyObject],
+                let id = jsonDictionary["id"] as? String,
+                let showReceiptController = storyboard?.instantiateViewControllerWithIdentifier("showReceiptTVC") as? showReceiptTVC
+                where validReceiptIDs.contains(id) {
+                    showReceiptController.receiptDict = jsonDictionary
+                    navigationController?.pushViewController(showReceiptController, animated: true)
+            
+            }
+            
+            
+        } catch _ as NSError {
+            resumeScanning()
+        }
+        
+        let currentVersion = NSUserDefaults.standardUserDefaults().floatForKey("dataVersion");
+        guard let path = NSBundle.mainBundle().pathForResource("foodData", ofType: "json") else {
+            print("Invalid filename/path.")
+            return
+        }
+        do {
+            let jsonData = try NSData(contentsOfURL: NSURL(fileURLWithPath: path), options: NSDataReadingOptions.DataReadingMappedIfSafe)
+            
+            let jsonResult = try NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.MutableContainers)
+            
+            
+            if let jsonDictionary = jsonResult as? [String:AnyObject],
+                //let newVersion = jsonDictionary["version"] as? Float where currentVersion < newVersion,
+                let foodItems = jsonDictionary["foods"] as? [String:AnyObject]{
+                    
+                    NSUserDefaults.standardUserDefaults().setObject(foodItems, forKey: "foodDictionary")
+                    
+                    NSUserDefaults.standardUserDefaults().setFloat(jsonResult["version"] as! Float, forKey: "dataVersion")
+                    
+                    
+            }
+            
+            
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
     }
 
 }
