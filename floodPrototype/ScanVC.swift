@@ -74,6 +74,9 @@ class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     }
     
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBarHidden = true
+        navigationController?.toolbarHidden = true
         highlightView.frame = CGRectZero
         session.startRunning()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "orientationChanged:", name: UIDeviceOrientationDidChangeNotification, object: nil)
@@ -126,7 +129,7 @@ class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
                 break
             }
         }
-        print(detectionString);
+        //print(detectionString);
         highlightView.frame = highlightViewRect
         
         capturedQRCode(detectionString);
@@ -140,7 +143,7 @@ class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     }
     
     func capturedQRCode(codeString:String?){
-        print(codeString)
+        //print(codeString)
         guard let codeData = codeString?.dataUsingEncoding(NSUTF8StringEncoding) else {
             resumeScanning()
             return
@@ -155,38 +158,6 @@ class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
                     navigationController?.pushViewController(showReceiptController, animated: true)
             
             }
-            
-            
-        } catch _ as NSError {
-            resumeScanning()
-        }
-        
-        let currentVersion = NSUserDefaults.standardUserDefaults().floatForKey("dataVersion");
-        guard let path = NSBundle.mainBundle().pathForResource("foodData", ofType: "json") else {
-            print("Invalid filename/path.")
-            return
-        }
-        do {
-            let jsonData = try NSData(contentsOfURL: NSURL(fileURLWithPath: path), options: NSDataReadingOptions.DataReadingMappedIfSafe)
-            
-            let jsonResult = try NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.MutableContainers)
-            
-            
-            if let jsonDictionary = jsonResult as? [String:AnyObject],
-                //let newVersion = jsonDictionary["version"] as? Float where currentVersion < newVersion,
-                let foodItems = jsonDictionary["foods"] as? [String:AnyObject]{
-                    
-                    NSUserDefaults.standardUserDefaults().setObject(foodItems, forKey: "foodDictionary")
-                    
-                    NSUserDefaults.standardUserDefaults().setFloat(jsonResult["version"] as! Float, forKey: "dataVersion")
-                    
-                    
-            }
-            
-            
-        } catch let error as NSError {
-            print(error.localizedDescription)
-        }
+        } catch _ as NSError { resumeScanning() }
     }
-
 }
