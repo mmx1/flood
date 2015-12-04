@@ -25,6 +25,8 @@
 		1571B4A81BFEDD7200A809CA /* ResearchDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571B4A61BFEDD7200A809CA /* ResearchDetailTVC.swift */; };
 		158DFD821C113FE100C4D8E9 /* showReceiptTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158DFD811C113FE100C4D8E9 /* showReceiptTVC.swift */; };
 		158DFD851C11586500C4D8E9 /* receiptCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158DFD841C11586500C4D8E9 /* receiptCell.swift */; };
+		158DFD8B1C117D4300C4D8E9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158DFD8A1C117D4300C4D8E9 /* ProfileView.swift */; };
+		158DFD8D1C117F2E00C4D8E9 /* SuggestionsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158DFD8C1C117F2E00C4D8E9 /* SuggestionsTVC.swift */; };
 		15A6CCAC1BFBC06000372BCC /* METADATA.json in Resources */ = {isa = PBXBuildFile; fileRef = 15A6CCA61BFBC06000372BCC /* METADATA.json */; };
 		15A6CCAD1BFBC06000372BCC /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15A6CCA71BFBC06000372BCC /* Montserrat-Black.ttf */; };
 		15A6CCAE1BFBC06000372BCC /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15A6CCA81BFBC06000372BCC /* Montserrat-Bold.ttf */; };
@@ -78,6 +80,8 @@
 		1571B4A61BFEDD7200A809CA /* ResearchDetailTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResearchDetailTVC.swift; path = ../ResearchDetailTVC.swift; sourceTree = "<group>"; };
 		158DFD811C113FE100C4D8E9 /* showReceiptTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showReceiptTVC.swift; sourceTree = "<group>"; };
 		158DFD841C11586500C4D8E9 /* receiptCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = receiptCell.swift; sourceTree = "<group>"; };
+		158DFD8A1C117D4300C4D8E9 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = ../ProfileView.swift; sourceTree = "<group>"; };
+		158DFD8C1C117F2E00C4D8E9 /* SuggestionsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionsTVC.swift; sourceTree = "<group>"; };
 		15A6CCA61BFBC06000372BCC /* METADATA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = METADATA.json; sourceTree = "<group>"; };
 		15A6CCA71BFBC06000372BCC /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
 		15A6CCA81BFBC06000372BCC /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
@@ -168,12 +172,14 @@
 		158DFD831C1140C500C4D8E9 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				158DFD8A1C117D4300C4D8E9 /* ProfileView.swift */,
 				1571B4A61BFEDD7200A809CA /* ResearchDetailTVC.swift */,
 				150FD2A11C0A89DF00E2EBE5 /* ScanVC.swift */,
 				150FD2A31C0AACEF00E2EBE5 /* bracketView.swift */,
 				153097751BF68A9B0076ACA7 /* ResearchTVC.swift */,
 				1571AC9C1BF25B1000C35B5B /* MenuTVC.swift */,
 				158DFD811C113FE100C4D8E9 /* showReceiptTVC.swift */,
+				158DFD8C1C117F2E00C4D8E9 /* SuggestionsTVC.swift */,
 				150FD29F1C0A59D100E2EBE5 /* shoppingListTVC.swift */,
 				158DFD841C11586500C4D8E9 /* receiptCell.swift */,
 				15B991CF1BFB0AD7008C6ECF /* researchTVCell.swift */,
@@ -339,10 +345,12 @@
 				15B991D01BFB0AD7008C6ECF /* researchTVCell.swift in Sources */,
 				1571AC9D1BF25B1000C35B5B /* MenuTVC.swift in Sources */,
 				158DFD821C113FE100C4D8E9 /* showReceiptTVC.swift in Sources */,
+				158DFD8B1C117D4300C4D8E9 /* ProfileView.swift in Sources */,
 				15B991CC1BFAF84C008C6ECF /* TabBarController.swift in Sources */,
 				1571B4A71BFEDD7200A809CA /* ResearchDetailTVC.swift in Sources */,
 				153097761BF68A9B0076ACA7 /* ResearchTVC.swift in Sources */,
 				150FD2A21C0A89DF00E2EBE5 /* ScanVC.swift in Sources */,
+				158DFD8D1C117F2E00C4D8E9 /* SuggestionsTVC.swift in Sources */,
 				158DFD851C11586500C4D8E9 /* receiptCell.swift in Sources */,
 				15646B391BF2564100D2EFB4 /* AppDelegate.swift in Sources */,
 				150FD2A01C0A59D100E2EBE5 /* shoppingListTVC.swift in Sources */,

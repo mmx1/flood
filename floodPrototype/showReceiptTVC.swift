@@ -14,7 +14,10 @@ class showReceiptTVC: UITableViewController {
     @IBOutlet weak var chart: UIImageView!
     
     var receiptDict:[String:AnyObject]?
-    let receipts = [ "1ga3t15z": ["total":8237.25, "chartImage":"chart1", "items": ["Coffee", "Milk", "Eggs", "Beef","Pasta","Almonds", "Cheese", "Rice", "Lettuce"] ] ]
+    let receipts = [ "1ga3t15z": ["total":8237.25, "chartImage":"chart1", "items": ["Coffee", "Milk", "Eggs", "Beef","Pasta","Almonds", "Cheese", "Rice", "Lettuce"] ],
+    "5f1t3t13": ["total":3382.55, "chartImage":"chart2", "items":["Oranges", "Rice", "Walnuts", "Potatoes"]],
+    "35h35h24h24ht": ["total":12953.25, "chartImage":"chart3", "items":["Beef","Almonds","Pork","Soda","Coffee", "Chicken", "Pasta"]]
+    ]
     let foodDict = NSUserDefaults.standardUserDefaults().dictionaryForKey("foodDictionary")
     
     override func viewDidLoad() {

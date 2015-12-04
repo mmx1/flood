@@ -1,18 +1,17 @@
 //
-//  TabBarController.swift
+//  ProfileView.swift
 //  floodPrototype
 //
-//  Created by Mark Xue on 11/16/15.
+//  Created by Mark Xue on 12/3/15.
 //  Copyright © 2015 Mark Xue. All rights reserved.
 //
 
 import UIKit
 
-class TabBarController: UITabBarController {
+class ProfileView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        selectedIndex = 1
 
         // Do any additional setup after loading the view.
     }

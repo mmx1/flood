@@ -19,7 +19,7 @@ class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
     var highlightView = UIView()
     
-    let validReceiptIDs = ["1ga3t15z"]
+    let validReceiptIDs = ["1ga3t15z", "5f1t3t13", "35h35h24h24ht"]
     
     @IBOutlet weak var instructions: UILabel!
     @IBOutlet weak var previewView: UIView!
@@ -154,9 +154,12 @@ class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
                 let id = jsonDictionary["id"] as? String,
                 let showReceiptController = storyboard?.instantiateViewControllerWithIdentifier("showReceiptTVC") as? showReceiptTVC
                 where validReceiptIDs.contains(id) {
+                    NSUserDefaults.standardUserDefaults().setObject(jsonDictionary, forKey: "lastReceipt")
                     showReceiptController.receiptDict = jsonDictionary
                     navigationController?.pushViewController(showReceiptController, animated: true)
             
+            }else{
+                resumeScanning()
             }
         } catch _ as NSError { resumeScanning() }
     }
