@@ -37,7 +37,7 @@
             "fatGrams": 13,
             "proteinGrams": 22,
             "rating": 3,
-            "text": "Beef is the culinary name for meat from bovines, especially cattle. Beef can be harvested from bulls, heifers or steers. Its acceptability as a food source varies in different parts of the world.\nBecause so much feed goes into growing a steer, the agricultural impact of beef is enormous",
+            "text": "Because so much feed goes into growing a steer, the agricultural impact of beef is enormous",
             "url": "sample url",
             "suggestions": ["Chicken", "Pork", "Mutton"]
         }
@@ -193,7 +193,7 @@
             "fatGrams": 0.1,
             "proteinGrams": 0.3,
             "rating": 2,
-            "text": "A soft drink is a drink that typically contains carbonated water, a sweetener and a natural or artificial flavoring. The sweetener may be sugar, high-fructose corn syrup, fruit juice, sugar substitutes or some combination of these.\nMuch of the water ",
+            "text": "Much of the water consumption of soda comes from packaging, processing, and often the refined sugar it contains",
             "url": "sample url"
         }
     },

@@ -63,7 +63,6 @@ class showReceiptTVC: UITableViewController {
         }
         resultLabel.sizeToFit()
         tableView.tableHeaderView?.setNeedsDisplay()
-
         
         tableView.reloadData()
         navigationController?.navigationBarHidden = false
@@ -72,6 +71,11 @@ class showReceiptTVC: UITableViewController {
         
 
 
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.setNeedsDisplay()
     }
 
     override func didReceiveMemoryWarning() {
@@ -134,7 +138,11 @@ class showReceiptTVC: UITableViewController {
         for key in foodDictionary.keys {
             if var entry = foodDictionary[key] as? [String:AnyObject]
                 where key.lowercaseString.rangeOfString(receiptItems[indexPath.row].lowercaseString) != nil {
-                    tabBarController?.selectedIndex = 3
+                    entry["name"] = key
+                    detailVC.detailResult = entry
+                    navigationController?.pushViewController(detailVC, animated: true)
+                    /*
+                    tabBarController?.selectedIndex = 2
                     if let navController = tabBarController?.selectedViewController as? UINavigationController{
                         navController.popToRootViewControllerAnimated(true)
                         entry["name"] = key
@@ -142,6 +150,7 @@ class showReceiptTVC: UITableViewController {
                         print(entry)
                         navController.pushViewController(detailVC, animated: true)
                     }
+*/
             }
         }
     }

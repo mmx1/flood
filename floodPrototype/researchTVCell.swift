@@ -52,8 +52,10 @@ class researchTVCell: UITableViewCell {
         for i in 0...4{
             if i < rating {
                 waterDrops[i].image = UIImage(named: "waterBlue")
+                waterDrops[i].alpha = 1
             }else{
                 waterDrops[i].image = UIImage(named: "waterGrey")
+                waterDrops[i].alpha = 0.5
             }
         }
         
